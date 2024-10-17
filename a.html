@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Hábitos Alimentares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        h1 {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label, input, select, textarea, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Hábitos Alimentares</h1>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="anos">Idade:</label>
+        <input type="number" id="anos" name="anos" required><br>
+
+        <label for="refeições">Quantas refeições você faz por dia?</label>
+        <input type="number" id="refeições" name="refeições" required><br>
+
+        <label for="comidafav">Qual é o seu prato favorito?</label>
+        <input type="text" id="comidafav" name="comidafav" required><br>
+
+        <label for="dieta">Você segue alguma dieta específica?</label>
+        <select id="dieta" name="dieta" required>
+            <option value="nenhuma">Nenhuma</option>
+            <option value="vegetariano">Vegetariana(a)</option>
+            <option value="vegano">Vegana(o)</option>
+            <option value="sem-glúten">Sem glúten</option>
+            <option value="outra">Outra</option>
+        </select><br>
+
+        <label for="comments">Comentários adicionais:</label>
+        <textarea id="comments" name="comments"></textarea><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
